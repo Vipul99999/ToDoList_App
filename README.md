@@ -6,27 +6,16 @@
   <a href="https://proandroiddev.com/everything-you-need-to-know-about-adding-notifications-with-alarm-manager-in-android-cb94a92b3235"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
 </p>
 
-<p >  
-ToDoList App demonstrates modern Android development with Hilt, Coroutines, LiveData, Jetpack (Room, ViewModel), and Material 3 Design based on MVVM architecture. 
+<p>
+
+   Engineered a secure full-stack task manager with JWT authentication, CRUD APIs, and animated UI transitions
+ using Framer Motion.
+ • Tools Used: MongoDB, Express.js, React.js, Node.js, Mongoose, Framer Motion, Axios, Tailwind.css, GitHub
 </p>
 
 
 
-## Tech stack & Open-source libraries
-- Minimum SDK level 26
-- [Kotlin](https://kotlinlang.org/)
-  - Lifecycle: Observe Android lifecycles and handle UI states upon the lifecycle changes.
-  - ViewModel: Manages UI-related data holder and lifecycle aware. Allows data to survive configuration changes such as screen rotations.
-  - DataBinding: Binds UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
-  - Room: Constructs Database by providing an abstraction layer over SQLite to allow fluent database access.
-  - Navigation Component Graphs - To use single activity multiple fragment architecture.
-  - [Hilt](https://dagger.dev/hilt/): For dependency injection.
-  - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) For asynchronous programming.
-- Architecture
-  - MVVM Architecture (View - DataBinding - ViewModel - Model)
-  - Repository Pattern
-- [Material-Components](https://github.com/material-components/material-components-android): Material design components for building ripple animation, and CardView.
-- [ColorPicker](https://github.com/QuadFlask/colorpicker): Simple android color picker with color wheel and lightness bar.
+
 
 
 
