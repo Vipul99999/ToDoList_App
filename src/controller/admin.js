@@ -1,9 +1,4 @@
-/**
- * Title: Admin controller
- * Description:
- * Author: Samin Yasar
- * Date: 29/June/2022
- */
+
 
 // Dependencies
 const adminService = require("../service/admin");

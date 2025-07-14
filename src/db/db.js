@@ -1,9 +1,4 @@
-/**
- * Title: Database related stuff
- * Description:
- * Author: Samin Yasar
- * Date: 29/June/2022
- */
+
 
 // Dependencies
 const mongoose = require("mongoose");

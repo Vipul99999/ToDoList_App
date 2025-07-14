@@ -1,9 +1,3 @@
-/**
- * Title: Token service related stuff
- * Description:
- * Author: Samin Yasar
- * Date: 30/June/2022
- */
 
 // Dependencies
 const tokenModel = require("../model/Token");

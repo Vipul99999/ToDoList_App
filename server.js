@@ -1,9 +1,3 @@
-/**
- * Title: Server Setup
- * Description: HTTP Server related code
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
 
 // Dependencies
 const http = require("http");

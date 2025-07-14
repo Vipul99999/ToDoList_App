@@ -1,9 +1,4 @@
-/**
- * Title: ToDo App
- * Description: User based ToDo app (Server)
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
+
 
 // Dependencies
 const express = require("express");

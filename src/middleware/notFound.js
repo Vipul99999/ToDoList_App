@@ -1,9 +1,4 @@
-/**
- * Title: Not found middleware
- * Description:
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
+
 
 // Dependencies
 const { error } = require("../util/script");

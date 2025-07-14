@@ -1,9 +1,4 @@
-/**
- * Title: User authorization middleware
- * Description:
- * Author: Samin Yasar
- * Date: 29/June/2022
- */
+
 
 // Dependencies
 const jwt = require("jsonwebtoken");

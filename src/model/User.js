@@ -1,9 +1,4 @@
-/**
- * Title: User model
- * Description: Mongoose model for user
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
+
 
 // Dependencies
 const mongoose = require("mongoose");

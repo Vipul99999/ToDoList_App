@@ -1,9 +1,4 @@
-/**
- * Title: User controller
- * Description:
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
+
 
 // Dependencies
 const bcrypt = require("bcrypt");

@@ -1,84 +1,146 @@
-# **Todo App**
+<h1 align="center">📝 ToDoListApp</h1>
 
-Simple Todo app where user can login his account and get access only his todo and their also an admin who have all access to edit, delete, get user's data.
+<p align="center">
+  A secure, modern full-stack task manager with <strong>JWT authentication</strong>, full <strong>CRUD APIs</strong>, and sleek UI animations powered by <strong>Framer Motion</strong>.
+</p>
 
-[![Website](https://img.shields.io/website?label=saminyasar%20🚀&name=hello&style=flat&url=https://saminyasar.netlify.app/)](https://saminyasar.netlify.app/)
-[![Facebook Follow](https://img.shields.io/badge/Facebook-Follow-brightgreen)](https://www.facebook.com/saminyasar004/)
-[![Facebook Page](https://img.shields.io/badge/Facebook-Page-brightgreen)](https://www.facebook.com/saminyasar04/)
-[![Instagram Follow](https://img.shields.io/badge/Instagram-Follow-brightgreen)](https://instagram.com/saminyasar004/)
-[![Twitter Follow](https://img.shields.io/badge/Twitter-Follow-brightgreen)](https://twitter.com/saminyasar004/)
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-Questions-brightgreen)](https://stackoverflow.com/users/14735945/samin-yasar)
-[![Github Follow](https://img.shields.io/github/followers/saminyasar004?label=saminyasar004&style=social)](https://github.com/saminyasar004/)
+<p align="center">
+  <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-black?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
+
+---
+
+## 🚀 Features
+
+- 🔐 **JWT Authentication** – Secure login, registration, and route protection.
+- ✅ **Task CRUD** – Create, read, update, and delete tasks effortlessly.
+- 🌐 **RESTful API** – Robust backend using Express & MongoDB.
+- 💾 **Mongoose** – Schema-based data modeling.
+- ⚡ **Framer Motion** – Smooth transitions & animations.
+- 💅 **Tailwind CSS** – Modern, responsive design.
+- 🔄 **Axios** – Reliable frontend-backend communication.
+
+---
+
+## 🧰 Tech Stack
+
+| Category        | Technologies                                            |
+|----------------|---------------------------------------------------------|
+| **Frontend**    | React.js, Tailwind CSS, Axios, Framer Motion           |
+| **Backend**     | Node.js, Express.js, JWT                               |
+| **Database**    | MongoDB (Atlas or local)                               |
+| **ORM**         | Mongoose                                                |
+| **Version Control** | Git & GitHub                                      |
+| **Animation**   | Framer Motion                                           |
+
+---
+
+---
+## 🛠️ Installation & Setup
+
+> **Prerequisites:** Node.js, npm, MongoDB (Atlas or local)
 
 
-## **Schema**
+### 1. Clone the Repository
 
--   ### User
+```bash
+git clone https://github.com/your-username/ToDoList_App.git
+cd ToDoList_App
 
-    -   `_id`
-    -   `name`
-    -   `email` _unique_
-    -   `password`
-    -   `role` - [admin, user]
-    -   `accountStatus` - [pending, active, rejected]
+```
+---
+### ** Install Dependencies
 
--   ### Todo
+## For Backend 
+```bash
+cd backend
+npm install
+```
+## For Frontend 
+```bash
+cd ../frontend
+npm install
+```
 
-    -   `_id`
-    -   `title` _unique_
-    -   `description`
-    -   `todoStatus` - [incomplete, inProgress, completed]
-    -   `authorId`
+---
 
--   ### Token
-    -   `_id`
-    -   `token`
-    -   `authorId`
 
-## **API Router Endpoints**
+### ** Configure Environment Variables**
+- Create a `.env` file inside the /backend folder using the `.env.example` as a template:
+```bash
+cp backend/.env.example backend/.env
 
--   ### Admin
+```
+- Edit the `.env` file and add your config values:
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_jwt_secret
 
-    -   _Authorization and JWT Token require_
+```
+🔐 Keep your JWT secret safe and never commit the real .env file.
 
-    -   `/api/v1/admin/u/all` - **GET** - Return all users
-    -   `/api/v1/admin/u/:userId` - **PATCH** - Only edit accountStatus and role
+---
+### ** ▶️  Run the App
 
--   ### User
+## Start Backend Server
+```bash
+cd backend
+npm run dev
+```
 
-    -   `/api/v1/u/register` - **POST** - Register a new user
-    -   `/api/v1/u/login` - **GET** - Login a user and return a JWT token
-    -   `/api/v1/u/logout` - **GET** - Expire the JWT for a logged in user
-    -   `/api/v1/u/update` - **PATCH** - Update only user's name JWT require
-    -   `/api/v1/u/forgetPassword` - **POST** - Get a pincode in user's mail to change password
-    -   `/api/v1/u/changePassword` - **PATCH** - [pinCode, oldPassword, newPassword] - update the user's password
+## Start Frontend App 
+```bash
+cd ../frontend
+npm start
+```
 
--   ### Todo
+---
+### ✅ App Running At:
 
-    -   _All routes below only works for the logged in user && Authentication require_
+- **Frontend:** [http://localhost:3000](http://localhost:3000)
 
-    -   `/api/v1/t/new` - **POST** - Creates a new Todo and authenticate user by JWT token
-    -   `/api/v1/t/:todoId` - **GET** - Get a single Todo and authenticate user by JWT token
-    -   `/api/v1/t/all` - **GET** - Get all Todos and authenticate user by JWT token
-    -   `/api/v1/t/:todoId` - **PATCH** - Update acceptable information of the requested Todo and authenticate user by JWT token
-    -   `/api/v1/t/:todoId` - **DELETE** - Delete the requested Todo and authenticate user by JWT token
+- **Backend API:** [http://localhost:5000](http://localhost:5000)
 
-## **Features**
+---
+###  ** 📂 Folder Structure
+```bash
+ToDoList_App/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── ...
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── ...
+├── .env
+└── README.md
+```
+---
+### ** 🤝 Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
 
--   ### Admin
+1. Fork the repo
 
-    1. The first user of this system will be an admin
-    1. Admin can get all user's data (except password)
-    1. Admin can edit an user's accountStatus and role
+2. Create a new branch: git checkout -b feature/your-feature
 
--   ### User
+3. Make changes & commit: git commit -m "Add feature"
 
-    1. If the user's accountStatus is pending then user couldn't create any todo untill the admin active this account. only can login.
-    1. If the user's accountStatus is rejected then user couldn't login. He must have to contact with the admin through email to activate his account.
+4. Push to branch: git push origin feature/your-feature
 
--   ### Token
+5. Open a pull request 🚀
+---
+### ** 💬 Contact
+Have questions or suggestions? Reach out!
 
-    1. Whenever a user/admin login he gets a JWT token and then the token will be saved in the token database. An user/admin can have only one valid token at a time.
-    
+GitHub: @Vipul99999
 
-#### Happy Coding. 🚀
+Email: vipul20020308@gmail.com
+

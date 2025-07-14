@@ -1,9 +1,4 @@
-/**
- * Title: Admin router
- * Description:
- * Author: Samin Yasar
- * Date: 29/June/2022
- */
+
 
 // Dependencies
 const express = require("express");

@@ -1,9 +1,3 @@
-/**
- * Title: User authentication related stuff
- * Description:
- * Author: Samin Yasar
- * Date: 30/June/2022
- */
 
 // Dependencies
 

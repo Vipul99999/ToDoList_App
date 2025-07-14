@@ -1,9 +1,4 @@
-/**
- * Title: Default error controller
- * Description:
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
+
 
 // Dependencies
 const { responseSender } = require("../util/script");

@@ -1,9 +1,3 @@
-/**
- * Title: Token model
- * Description:
- * Author: Samin Yasar
- * Date: 30/June/2022
- */
 
 // Dependencies
 const mongoose = require("mongoose");

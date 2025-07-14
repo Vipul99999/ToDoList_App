@@ -1,9 +1,4 @@
-/**
- * Title: User router
- * Description:
- * Author: Samin Yasar
- * Date: 28/June/2022
- */
+
 
 // Dependencies
 const express = require("express");

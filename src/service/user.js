@@ -1,9 +1,3 @@
-/**
- * Title: User service related stuff
- * Description:
- * Author: Samin Yasar
- * Date: 29/June/2022
- */
 
 // Dependencies
 const userModel = require("../model/User");
